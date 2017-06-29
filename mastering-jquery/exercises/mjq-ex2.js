@@ -1,0 +1,10 @@
+$('h1').css('color', 'blue').text('Hello World');
+$('h3.not-this').removeClass('not-this').addClass('this');
+$('h5').replaceWith('<h5>I need a subtitle <span>That\'s better</span></h5>');
+$('.to-remove').remove();
+let someNew = $('<div>');
+someNew.addClass('something-new');
+let newP = $('<p>');
+newP.text('I\'m new here');
+newP.appendTo(someNew);
+$('body').append(someNew);
